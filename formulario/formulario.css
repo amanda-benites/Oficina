@@ -75,6 +75,10 @@ body {
     width: 1vw;
     height: 4vh;
 }
+.imgButton:hover {
+    width: 1.2vw;
+    height: 5vh;
+}
 
 .logo {
     width: 49vw;
