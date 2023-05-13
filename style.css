@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Inter';
+}
+
+body {
+    background-color: #FEE8B2;
+}
+
+
+/* ORGANIZANDO O GRID (FOI A FORMA MAIS FÁCIL E RÁPIDA QUE ENCONTREI DE FAZER) */
+.containerA {
+    display: grid;
+    grid-template-columns: 48vw 48vw;
+    grid-template-rows:10vh 65vh 15vh 10vh;
+    grid-template-areas:"header header"
+                        "titulo img"
+                        "botao img"
+                        "footer footer";
+}
+
+.header {
+    grid-area: header;
+    font-family: 'Archivo Black';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-left: 10vw;
+}
+
+.botao {
+    grid-area: botao;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img {
+    grid-area: img;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+/* ORGANIZAÇÃO DA LOGO */
+.logoHeader {
+    width: 49vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding-left: 3vw;
+}
+
+#logo {
+    width: 12vw;
+    height: 6vh;
+}
+
+/* ORGANIZAÇÃO DO MENU */
+.menuHeader {
+    width: 49.75vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding-right: 3vw;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    list-style: none;
+    gap: 40px;
+    margin-right: 3vh;
+}
+
+.a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Archivo Black';
+    text-transform: uppercase;
+}
+
+.a:hover {
+    color: #D74D00;
+}
+
+/* ADICIONANDO FORMAS GEOMÉTRICAS NO FUNDO DO TÍTULO */
+.escritaGrande {
+    background: url(assets/fundoTitulo.png);
+    background-repeat: no-repeat;
+    background-size: 40vh;
+    padding-top: 16vh;
+    padding-left: 5vw;
+}
+
+/* ORGANIZANDO O DESIGN DO TÍTULO */
+.tituloEscrito {
+    font-family: 'Archivo Black';
+    font-size: 10vh;
+    line-height: 1;
+}
+
+/* ORGANIZANDO A DISPOSIÇÃO DO TEXTO */
+.texto {
+    margin-top: 2vh;
+    padding-left: 5vw;
+    width: 25vw;
+}
+
+.espacoBotao {
+    margin-top: 2vh;
+    padding-left: 15vw;
+}
+
+button {
+    background-color: #1E42E1;
+    color: white;
+    border: none;
+    width: 15vw;
+    height: 8vh;
+    border-radius: 20px;
+}
+
+.menina {
+    width: 40vw;
+    height: 85vh;
+}
+
