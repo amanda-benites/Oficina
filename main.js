@@ -1,3 +1,3 @@
 function formulario() {
-    window.location.href = '../formulario/formulario.html'
+    window.location.href = '../Oficina/formulario/formulario.html'
 }
