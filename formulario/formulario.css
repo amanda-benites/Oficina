@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: 'Inter';
+}
+
+body {
+    background-color: #FEE8B2;
+}
+
+
+/* ORGANIZANDO O GRID (FOI A FORMA MAIS FÁCIL E RÁPIDA QUE ENCONTREI DE FAZER) */
+.containerA {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+    grid-template-rows:10vh 30vh 54vh 6vh;
+    grid-template-areas:"header header"
+                        "titulo img"
+                        "form img"
+                        "footer footer";
+}
+
+.header {
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+}
+
+.titulo {
+    grid-area: titulo;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    background: url(../assets/fundoForm.png) no-repeat;
+    background-size: 8vw;
+    margin-left: 8vw;
+    padding-right: vw;
+    padding-left: 5vw;
+}
+
+.form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img {
+    grid-area: img;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.voltar {
+    width: 50vw;
+    padding-left: 3vw;
+}
+
+.buttonBack {
+    background: none;
+    border: none;
+}
+
+.imgButton {
+    width: 1vw;
+    height: 4vh;
+}
+
+.logo {
+    width: 49vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    padding-left: 3vw;
+}
+
+.imgLogo {
+    width: 12vw;
+    height: 6vh;
+}
+
+h1 {
+    font-family: 'Archivo Black';
+    text-transform: uppercase;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    gap: 2vh;
+}
+
+
+input {
+    background-color: white;
+    border: none;
+    padding: 1.8vh;
+    border-radius: 16px;
+    margin-bottom: 25px;
+}
+input:hover {
+    border: 2px #1E42E1 solid;
+}
+
+.buttonForm {
+    background-color: #1E42E1;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 2vh;
+}
+
+.imgForm {
+    width: 42vw;
+    height: 85vh;
+}

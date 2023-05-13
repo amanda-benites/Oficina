@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Document</title>
+</head>
+<body class="containerA">
+    <header class="header">
+        <div class="voltar">
+            <button class="buttonBack"><img class="imgButton" src="../assets/voltar.png" alt=""></button>
+        </div>
+        <div class="logo">
+            <img class="imgLogo" src="../assets/logo.png" alt="Logo">
+        </div>
+    </header>
+    <div class="titulo">
+        <h1>Preencha as infomações para inscrição</h1>
+    </div>
+    <div class="form">
+        <form action="https://formspree.io/f/mnqyrvby" method="POST">
+            <label for="nomecompleto">Nome completo</label>
+            <input type="text" id="nomecompleto" name="Nome" placeholder="João da Silva" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="Email" placeholder="email@gmail.com" required>
+
+            <button class="buttonForm" type="submit">Enviar</button>
+        </form>
+    </div>
+    <div class="img">
+        <img class="imgForm" src="../assets/imgForm.png" alt="">
+    </div>
+    <footer class="footer"></footer>
+</body>
+</html>
