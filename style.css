@@ -104,6 +104,10 @@ body {
     text-transform: uppercase;
 }
 
+.home {
+    color: #1E42E1;
+}
+
 .a:hover {
     color: #1E42E1;
 }
