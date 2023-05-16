@@ -252,5 +252,10 @@ h1 {
         width: 3.5vw;
         height: 2.5vh;
     }
+
+    .imgLogo {
+        width: 20vw;
+        height: 2.5vh;
+    }
 }
 
