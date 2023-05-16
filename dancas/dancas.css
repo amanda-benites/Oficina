@@ -202,3 +202,56 @@ h1 {
     right: 0;
 }
 
+
+@media all and (max-width: 896px) {
+    .containerA {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows:10vh 34vh 50vh 6vh;
+        grid-template-areas:"header"
+                            "titulo" 
+                            "imgs"
+                            "footer";
+    }
+
+    h1 {
+        padding-right: 5vw;
+    }
+
+    .tit_h1 {
+        height: 15vh;
+        background-size: 17vw;
+        margin-left: 2vw;
+        padding-left: 8vw;
+        background-color: aqua;
+    }
+
+    .texto {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    #prev-button img{
+        width: 3vw;
+        height: 2vh;
+    } 
+      
+    #next-button img {
+        width: 3vw;
+        height: 2vh;
+    }
+
+    .imgButton {
+        width: 3vw;
+        height: 2vh;
+    }
+
+    .imgButton:hover {
+        width: 3.5vw;
+        height: 2.5vh;
+    }
+}
+

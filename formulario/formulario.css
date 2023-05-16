@@ -132,3 +132,62 @@ input:hover {
     width: 42vw;
     height: 85vh;
 }
+
+@media all and (max-width: 896px) {
+    .containerA {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows:10vh 35vh 49vh 0vh 6vh;
+        grid-template-areas:"header"
+                            "titulo"
+                            "form"
+                            "img"
+                            "footer";
+    }
+
+    .header {
+        grid-area: header;
+    }
+    
+    .titulo {
+        grid-area: titulo;
+        background: url(../assets/fundoForm.png) no-repeat;
+        background-size: 20vw;
+        margin-left: 2vw;
+        padding-left: 8vw;
+        background-position-y: 8vh;
+    }
+    
+    .form {
+        grid-area: form;
+    }
+
+    .img {
+        grid-area: img;
+        display: none;
+    }
+
+    .footer {
+        grid-area: footer;
+    }
+
+    form {
+        width: 75vw;
+        gap: 1.5vh;
+    }
+
+    .imgLogo {
+        width: 20vw;
+        height: 2.5vh;
+    }
+
+    .imgButton {
+        width: 3vw;
+        height: 2vh;
+    }
+    .imgButton:hover {
+        width: 3.5vw;
+        height: 2.5vh;
+    }
+    
+}

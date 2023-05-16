@@ -160,3 +160,102 @@ button:hover {
     height: 85vh;
 }
 
+@media all and (max-width: 896px) {
+    .containerA {
+        display: grid;
+        grid-template-columns: 100vw;
+        grid-template-rows:10vh 35vh 10vh 39vh 5vh;
+        grid-template-areas:"header"
+                            "titulo"
+                            "botao"
+                            "img"
+                            "footer";
+    }
+
+    .header {
+        grid-area: header;
+    }
+    
+    .titulo {
+        grid-area: titulo;
+    }
+    
+    .botao {
+        grid-area: botao;
+    }
+    
+    .img {
+        grid-area: img;
+    }
+    
+    .footer {
+        grid-area: footer;
+    }
+
+    .logoHeader {
+        width: 15vw;
+        height: 10vh;
+        padding-left: 3vw;
+    }
+    
+    #logo {
+        width: 20vw;
+        height: 2.5vh;
+    }
+
+    .menuHeader {
+        width: 85vw;
+        height: 10vh;
+        padding-right: 4vw;
+    }
+
+    #menu {
+        gap: 20px;
+    }
+    
+    .a {
+        font-size: x-small;
+    }
+
+
+    .escritaGrande {
+        background-size: 10vh;
+        padding-left: 5vw;
+        padding-top: 5vh;
+    }
+    
+
+    .tituloEscrito {
+        font-size: 4vh;
+    }
+
+    .texto {
+        margin-top: 5vh;
+        width: 70vw;
+    }
+
+    button {
+        background-color: #1E42E1;
+        color: white;
+        border: none;
+        width: 50vw;
+        height: 5vh;
+        border-radius: 20px;
+    }
+
+    button:hover {
+        width: 52vw;
+        height: 7vh;
+    }
+
+    .espacoBotao {
+        margin-top: 2vh;
+        padding-left: 15vw;
+    }
+
+    .menina {
+        width: 50vw;
+        height: 35vh;
+    }
+}
+
