@@ -17,7 +17,7 @@ body {
 .containerA {
     display: grid;
     grid-template-columns: 50vw 50vw;
-    grid-template-rows:10vh 30vh 54vh 6vh;
+    grid-template-rows:10vh 20vh 64vh 6vh;
     grid-template-areas:"header header"
                         "titulo img"
                         "form img"
@@ -50,6 +50,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-top: 3vh;
 }
 
 .img {
@@ -105,14 +106,14 @@ form {
     width: 25vw;
     margin-top: 5vh;
     margin-bottom: 10vh;
-    gap: 2vh;
+    gap: 1vh;
 }
 
 
 input {
     background-color: white;
     border: none;
-    padding: 1.8vh;
+    padding: 1.5vh;
     border-radius: 16px;
     margin-bottom: 25px;
 }
@@ -172,7 +173,7 @@ input:hover {
     }
 
     form {
-        width: 75vw;
+        width: 65vw;
         gap: 1.5vh;
     }
 
