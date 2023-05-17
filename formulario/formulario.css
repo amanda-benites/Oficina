@@ -109,6 +109,9 @@ form {
     gap: 1vh;
 }
 
+label{
+    width: 26vw;
+}
 
 input {
     background-color: white;
