@@ -102,3 +102,28 @@ h1 {
     margin-top: 13vh;
     margin-right: 33vh;
 }
+
+
+@media all and (max-width: 896px) {
+    .nada{
+        display: none;
+    }
+
+    .anitta {
+        width: 80vw; /* horizontal */
+        margin-right: 40vw;
+        height: 29vh; /* vertical */
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease-in-out; /* adiciona uma transição suave à transformação */
+    }
+
+    .imgButton {
+        width: 3vw;
+        height: 2vh;
+    }
+
+    .imgButton:hover {
+        width: 3.5vw;
+        height: 2.5vh;
+    }
+}
